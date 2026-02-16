@@ -256,27 +256,27 @@ I'd also like to thank [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/),
 <style>
 
 .gs-section-01 h3 {
-  color: red;
+  color: red !important;
 }
 
 .gs-section-01 p {
-  font-size: 30px;
+  font-size: 30px !important;
 }
 
 .gs-section-02 h3 {
-  color: blue;
+  color: blue !important;
 }
 
 .gs-section-02 p {
-  font-size: 24px;
+  font-size: 24px !important;
 }
 
 .gs-section-03 h3 {
-  color: purple;
+  color: purple !important;
 }
 
 .gs-section-03 p {
-  font-family: "Courier New", monospace;
+  font-family: "Courier New", monospace !important;
 }
 
 </style>
