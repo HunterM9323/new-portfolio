@@ -24,7 +24,7 @@ layout: default
           {% endfor %}
         </ul>
 
-        <br>
+        <br />
 
         <h4>Weaknessess</h4>
         <ul>
@@ -42,7 +42,7 @@ layout: default
           {% endfor %}
         </ul>
 
-        <br>
+        <br />
 
         <h4>Weaknessess</h4>
         <ul>
@@ -55,12 +55,15 @@ layout: default
   </tbody>
 </table>
 
-<br>
-<hr>
-<br>
+<br />
+<hr />
+<br />
 
-<blockquote>
-  <pre><code>
+<details class="layout-toggle">
+  <summary>See Page Layout</summary>
+
+  <blockquote>
+    <pre><code>
 ###
 ###  LAYOUT INHERITANCE
 ###
@@ -106,7 +109,7 @@ layout: default
 
 
       ###
-      ### nice-text.html layout
+      ###  nice-text.html layout
       ###
 
       ---
@@ -123,7 +126,7 @@ layout: default
 
 
       ###
-      ### liquid-table.html layout
+      ###  liquid-table.html layout
       ###
 
       ---
@@ -254,10 +257,31 @@ layout: default
       &lt;/tr> 
     &lt;/tbody>
     &lt;/table>
-  </code></pre>
-</blockquote>
+    </code></pre>
+  </blockquote>
+</details>
 
 <style>
+  /* Toggle styling (hide/show the layout inheritance block) */
+  .layout-toggle summary {
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    user-select: none;
+    margin-bottom: 10px;
+  }
+
+  .layout-toggle[open] summary {
+    margin-bottom: 10px;
+  }
+
+  .layout-toggle blockquote {
+    margin: 0;
+  }
+
+  /* Code block styling */
   pre {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
       Bitstream Vera Sans Mono, Courier New, monospace, serif;
@@ -268,8 +292,8 @@ layout: default
     padding-bottom: 20px !ie7;
   }
 
-  /* NOTE: This looks like a typo in your original code ("ui" vs "ul"). Kept as-is. */
-  ui {
+  /* Fixing the typo: ui -> ul */
+  ul {
     padding-inline-start: 10px;
   }
 
